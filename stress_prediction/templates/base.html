@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link href="\static\css\basestyle.css" rel="stylesheet">
+</head>
+
+<body class="bg-dar">
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+                <h4 class="text-white">Stres Detection</h4>
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-link px-2 link-dark "><a href="/" class="nav-link text-white"
+                        aria-current="page">Home</a>
+                </li>
+                <li class="nav-link px-2 link-dark"><a href="/models" class="nav-link text-white">Models</a></li>
+                <li class="nav-link px-2 link-dark"><a href="contact" class="nav-link text-white">contact</a>
+                </li>
+                <li class="btn btn-outline nav-link px-2 link-dark"><a href="/logout"
+                        class=" nav-link text-white">logout</a>
+                </li>
+            </ul>
+
+        </header>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>
